@@ -1,0 +1,839 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/clemens/ontologies/2017/0/power_grid"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/clemens/ontologies/2017/0/power_grid">
+    <Prefix name="" IRI="http://www.semanticweb.org/clemens/ontologies/2017/0/power_grid"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#HousingComplex"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FrequencyHz"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ControllingPowerRange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EmploymentZoneTransformer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#validEnd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ACTransmission"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MinW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DCTransmission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CableType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransmissionLine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OffshoreWindFarm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsAt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BiogasPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportEntity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#800kVDC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsAt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OfficeComplex"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOutputTransmission"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#validNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkEntity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#validStart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransmission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnderseeCable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supermarket"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Voltage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#230V50HzAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ReactionTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighToMediumTransformer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IndustrialPlant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCabletype"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInputTransmission"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#20kV50HzAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transformer"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasControllability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MaxW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransmissionType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowerlineHighVoltage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Controllability"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ACTransmission"/>
+        <Class IRI="#TransmissionType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer"/>
+        <Class IRI="#NetworkEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInputTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DCTransmission"/>
+        <Class IRI="#TransmissionType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <Class IRI="#NetworkEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOutputTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformer"/>
+        <Class IRI="#NetworkEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformer"/>
+        <ObjectUnionOf>
+            <Class IRI="#Consumer"/>
+            <Class IRI="#Transformer"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformer"/>
+        <ObjectUnionOf>
+            <Class IRI="#Producer"/>
+            <Class IRI="#Transformer"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInputTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOutputTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransmissionLine"/>
+        <Class IRI="#CableType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportEntity"/>
+        <Class IRI="#NetworkEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportEntity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#endsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Consumer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportEntity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#startsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Producer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportEntity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportEntity"/>
+        <DataHasValue>
+            <DataProperty IRI="#validEnd"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportEntity"/>
+        <DataHasValue>
+            <DataProperty IRI="#validStart"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnderseeCable"/>
+        <Class IRI="#CableType"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Consumer"/>
+        <Class IRI="#Producer"/>
+        <Class IRI="#Transformer"/>
+        <Class IRI="#TransportEntity"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#BiogasPlant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transformer"/>
+        <NamedIndividual IRI="#EmploymentZoneTransformer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transformer"/>
+        <NamedIndividual IRI="#HighToMediumTransformer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#HousingComplex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#IndustrialPlant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#OfficeComplex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#OffshoreWindFarm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportEntity"/>
+        <NamedIndividual IRI="#PowerlineHighVoltage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#Supermarket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ACTransmission"/>
+        <NamedIndividual IRI="#20kV50HzAC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ACTransmission"/>
+        <NamedIndividual IRI="#230V50HzAC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DCTransmission"/>
+        <NamedIndividual IRI="#800kVDC"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutputTransmission"/>
+        <NamedIndividual IRI="#OffshoreWindFarm"/>
+        <NamedIndividual IRI="#800kVDC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#endsAt"/>
+        <NamedIndividual IRI="#PowerlineHighVoltage"/>
+        <NamedIndividual IRI="#HighToMediumTransformer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransmission"/>
+        <NamedIndividual IRI="#PowerlineHighVoltage"/>
+        <NamedIndividual IRI="#800kVDC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startsAt"/>
+        <NamedIndividual IRI="#PowerlineHighVoltage"/>
+        <NamedIndividual IRI="#OffshoreWindFarm"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#MaxW"/>
+        <NamedIndividual IRI="#OffshoreWindFarm"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#MinW"/>
+        <NamedIndividual IRI="#OffshoreWindFarm"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#validStart"/>
+        <NamedIndividual IRI="#PowerlineHighVoltage"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FrequencyHz"/>
+        <NamedIndividual IRI="#20kV50HzAC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Voltage"/>
+        <NamedIndividual IRI="#20kV50HzAC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20000</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endsAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startsAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPartOf"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCabletype"/>
+        <Class IRI="#NetworkEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCabletype"/>
+        <Class IRI="#TransportEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCabletype"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#endsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Consumer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCabletype"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#startsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Producer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCabletype"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCabletype"/>
+        <DataHasValue>
+            <DataProperty IRI="#validEnd"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCabletype"/>
+        <DataHasValue>
+            <DataProperty IRI="#validStart"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCabletype"/>
+        <Class IRI="#CableType"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MaxW"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MinW"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ControllingPowerRange"/>
+        <Class IRI="#Controllability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FrequencyHz"/>
+        <Class IRI="#ACTransmission"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FrequencyHz"/>
+        <Class IRI="#TransmissionType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <Class IRI="#Consumer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <Class IRI="#NetworkEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <Class IRI="#Producer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <Class IRI="#Transformer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <Class IRI="#TransportEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <ObjectUnionOf>
+            <Class IRI="#Consumer"/>
+            <Class IRI="#Transformer"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <ObjectUnionOf>
+            <Class IRI="#Producer"/>
+            <Class IRI="#Transformer"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInputTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOutputTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#endsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Consumer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#startsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Producer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectExactCardinality>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <DataHasValue>
+            <DataProperty IRI="#validEnd"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MaxW"/>
+        <DataHasValue>
+            <DataProperty IRI="#validStart"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MinW"/>
+        <Class IRI="#Consumer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MinW"/>
+        <Class IRI="#NetworkEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MinW"/>
+        <Class IRI="#Producer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MinW"/>
+        <Class IRI="#Transformer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MinW"/>
+        <ObjectUnionOf>
+            <Class IRI="#Consumer"/>
+            <Class IRI="#Transformer"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MinW"/>
+        <ObjectUnionOf>
+            <Class IRI="#Producer"/>
+            <Class IRI="#Transformer"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MinW"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInputTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MinW"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOutputTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ReactionTime"/>
+        <Class IRI="#Controllability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Voltage"/>
+        <Class IRI="#TransmissionType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validEnd"/>
+        <Class IRI="#NetworkEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validEnd"/>
+        <Class IRI="#TransportEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validEnd"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#endsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Consumer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validEnd"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#startsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Producer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validEnd"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectExactCardinality>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validEnd"/>
+        <DataHasValue>
+            <DataProperty IRI="#validEnd"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validEnd"/>
+        <DataHasValue>
+            <DataProperty IRI="#validStart"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validNetwork"/>
+        <Class IRI="#Network"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validStart"/>
+        <Class IRI="#NetworkEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validStart"/>
+        <Class IRI="#TransportEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validStart"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#endsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Consumer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validStart"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#startsAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Producer"/>
+                <Class IRI="#Transformer"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validStart"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTransmission"/>
+            <Class IRI="#TransmissionType"/>
+        </ObjectExactCardinality>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validStart"/>
+        <DataHasValue>
+            <DataProperty IRI="#validEnd"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#validStart"/>
+        <DataHasValue>
+            <DataProperty IRI="#validStart"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ControllingPowerRange"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FrequencyHz"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MaxW"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MinW"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ReactionTime"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Voltage"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#validEnd"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#validNetwork"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#validStart"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S6</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Consumer"/>
+                <Variable IRI="urn:swrl#power_gridout"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTransmission"/>
+                <Variable IRI="urn:swrl#power_gridpowerline"/>
+                <Variable IRI="urn:swrl#power_gridtt"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasInputTransmission"/>
+                <Variable IRI="urn:swrl#power_gridout"/>
+                <Variable IRI="urn:swrl#power_gridtt2"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl#power_gridtt"/>
+                <Variable IRI="urn:swrl#power_gridtt2"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#validEnd"/>
+                <Variable IRI="urn:swrl#power_gridpowerline"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Producer"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridin"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#startsAt"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridpowerline"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridin"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTransmission"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridpowerline"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridtt"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasOutputTransmission"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridin"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridtt2"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl#power_gridpower_gridtt"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridtt2"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#validStart"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridpowerline"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ControllingPowerRange</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Controlling power range in watt (either in terms of producing or consuming)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MaxW</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The maximum power that is produced, consumed or transported</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinW</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The minimum power that is produced or consumed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReactionTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reaction time for changing the power output in seconds</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
