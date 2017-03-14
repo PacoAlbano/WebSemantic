@@ -28,10 +28,10 @@
         <NamedIndividual IRI="#EmploymentZoneTransformer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UndergroundCable"/>
+        <Class IRI="#ACTransmission"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ACTransmission"/>
+        <NamedIndividual IRI="#UndergroundCable"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#MinW"/>
@@ -61,10 +61,10 @@
         <NamedIndividual IRI="#BiogasPlant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TransportEntity"/>
+        <NamedIndividual IRI="#UnderseaCable"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UnderseaCable"/>
+        <Class IRI="#TransportEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UndergroundCable"/>
@@ -79,10 +79,10 @@
         <NamedIndividual IRI="#OfficeComplex"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PowerlineOffshoreWindFarm"/>
+        <ObjectProperty IRI="#hasOutputTransmission"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasOutputTransmission"/>
+        <NamedIndividual IRI="#PowerlineOffshoreWindFarm"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NetworkEntity"/>
@@ -94,22 +94,22 @@
         <NamedIndividual IRI="#PowerlineSupermarket"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TransmissionLine"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Supermarket"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#230V50HzAC"/>
+        <NamedIndividual IRI="#TransmissionLine"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Voltage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Consumer"/>
+        <NamedIndividual IRI="#230V50HzAC"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PowerlineMediumToLow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HighToMediumTransformer"/>
@@ -161,6 +161,13 @@
         <Class IRI="#TransmissionType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ACTransmission"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#FrequencyHz"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Consumer"/>
         <Class IRI="#NetworkEntity"/>
     </SubClassOf>
@@ -170,6 +177,20 @@
             <ObjectProperty IRI="#hasInputTransmission"/>
             <Class IRI="#TransmissionType"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#MaxW"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#MinW"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DCTransmission"/>
@@ -187,12 +208,33 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Producer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#MaxW"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#MinW"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Transformer"/>
         <Class IRI="#NetworkEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TransmissionLine"/>
         <Class IRI="#CableType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransmissionType"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Voltage"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TransportEntity"/>
@@ -240,6 +282,10 @@
         <Class IRI="#UnderseaCable"/>
         <Class IRI="#CableType"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ACTransmission"/>
+        <Class IRI="#DCTransmission"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Consumer"/>
         <Class IRI="#Producer"/>
@@ -729,24 +775,24 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Consumer"/>
-                <Variable IRI="power_gridpower_gridc"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridc"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#endsAt"/>
-                <Variable IRI="power_gridpower_gridline"/>
-                <Variable IRI="power_gridpower_gridc"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridline"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridc"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasInputTransmission"/>
-                <Variable IRI="power_gridpower_gridc"/>
-                <Variable IRI="power_gridpower_gridtt"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridc"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridtt"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasTransmission"/>
-                <Variable IRI="power_gridpower_gridline"/>
-                <Variable IRI="power_gridpower_gridtt"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridline"/>
+                <Variable IRI="urn:swrl#power_gridpower_gridtt"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -766,24 +812,24 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Producer"/>
-                <Variable IRI="power_gridp"/>
+                <Variable IRI="urn:swrl#power_gridp"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#startsAt"/>
-                <Variable IRI="power_gridline"/>
-                <Variable IRI="power_gridp"/>
+                <Variable IRI="urn:swrl#power_gridline"/>
+                <Variable IRI="urn:swrl#power_gridp"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasOutputTransmission"/>
-                <Variable IRI="power_gridp"/>
-                <Variable IRI="power_gridtt"/>
+                <Variable IRI="urn:swrl#power_gridp"/>
+                <Variable IRI="urn:swrl#power_gridtt"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasTransmission"/>
-                <Variable IRI="power_gridline"/>
-                <Variable IRI="power_gridtt"/>
+                <Variable IRI="urn:swrl#power_gridline"/>
+                <Variable IRI="urn:swrl#power_gridtt"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -803,24 +849,24 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#TransportEntity"/>
-                <Variable IRI="pl"/>
+                <Variable IRI="urn:swrl#pl"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasTransmission"/>
-                <Variable IRI="pl"/>
-                <Variable IRI="tt"/>
+                <Variable IRI="urn:swrl#pl"/>
+                <Variable IRI="urn:swrl#tt"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#endsAt"/>
-                <Variable IRI="pl"/>
-                <Variable IRI="e"/>
+                <Variable IRI="urn:swrl#pl"/>
+                <Variable IRI="urn:swrl#e"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasInputTransmission"/>
-                <Variable IRI="e"/>
-                <Variable IRI="tt"/>
+                <Variable IRI="urn:swrl#e"/>
+                <Variable IRI="urn:swrl#tt"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -840,24 +886,24 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#TransportEntity"/>
-                <Variable IRI="pl"/>
+                <Variable IRI="urn:swrl#pl"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasTransmission"/>
-                <Variable IRI="pl"/>
-                <Variable IRI="tt"/>
+                <Variable IRI="urn:swrl#pl"/>
+                <Variable IRI="urn:swrl#tt"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#startsAt"/>
-                <Variable IRI="pl"/>
-                <Variable IRI="s"/>
+                <Variable IRI="urn:swrl#pl"/>
+                <Variable IRI="urn:swrl#s"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasOutputTransmission"/>
-                <Variable IRI="s"/>
-                <Variable IRI="tt"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#tt"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
