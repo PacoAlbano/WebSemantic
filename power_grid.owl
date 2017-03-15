@@ -55,9 +55,6 @@
         <NamedIndividual IRI="#PowerlineHousingComplex"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PowerType"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#BiogasPlant"/>
     </Declaration>
     <Declaration>
@@ -85,9 +82,6 @@
         <NamedIndividual IRI="#PowerlineOffshoreWindFarm"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NetworkEntity"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasTransmission"/>
     </Declaration>
     <Declaration>
@@ -98,9 +92,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TransmissionLine"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Voltage"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#230V50HzAC"/>
@@ -121,7 +112,13 @@
         <Class IRI="#Producer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NetworkComponent"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#IndustrialPlant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#VoltageV"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasCabletype"/>
@@ -169,7 +166,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Consumer"/>
-        <Class IRI="#NetworkEntity"/>
+        <Class IRI="#NetworkComponent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Consumer"/>
@@ -197,8 +194,15 @@
         <Class IRI="#TransmissionType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NetworkComponent"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isPartOf"/>
+            <Class IRI="#Network"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Producer"/>
-        <Class IRI="#NetworkEntity"/>
+        <Class IRI="#NetworkComponent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Producer"/>
@@ -223,7 +227,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Transformer"/>
-        <Class IRI="#NetworkEntity"/>
+        <Class IRI="#NetworkComponent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TransmissionLine"/>
@@ -232,13 +236,13 @@
     <SubClassOf>
         <Class IRI="#TransmissionType"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#Voltage"/>
+            <DataProperty IRI="#VoltageV"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TransportEntity"/>
-        <Class IRI="#NetworkEntity"/>
+        <Class IRI="#NetworkComponent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TransportEntity"/>
@@ -291,6 +295,11 @@
         <Class IRI="#Producer"/>
         <Class IRI="#Transformer"/>
         <Class IRI="#TransportEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TransmissionLine"/>
+        <Class IRI="#UndergroundCable"/>
+        <Class IRI="#UnderseaCable"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Producer"/>
@@ -666,7 +675,7 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Voltage"/>
+        <DataProperty IRI="#VoltageV"/>
         <NamedIndividual IRI="#20kV50HzAC"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20000</Literal>
     </DataPropertyAssertion>
@@ -676,12 +685,12 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Voltage"/>
+        <DataProperty IRI="#VoltageV"/>
         <NamedIndividual IRI="#230V50HzAC"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">230000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Voltage"/>
+        <DataProperty IRI="#VoltageV"/>
         <NamedIndividual IRI="#800kVDC"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">800000</Literal>
     </DataPropertyAssertion>
@@ -698,7 +707,7 @@
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCabletype"/>
-        <Class IRI="#NetworkEntity"/>
+        <Class IRI="#NetworkComponent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCabletype"/>
@@ -756,7 +765,7 @@
         <Datatype abbreviatedIRI="xsd:unsignedInt"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Voltage"/>
+        <DataProperty IRI="#VoltageV"/>
         <Datatype abbreviatedIRI="xsd:unsignedInt"/>
     </DataPropertyRange>
     <DLSafeRule>

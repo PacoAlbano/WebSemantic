@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.7)  15 MAR 2017 00:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.7)  15 MAR 2017 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -115,6 +115,40 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count89
+)
+\c@KVtest=\count90
+\sf@farskip=\skip48
+\sf@captopadj=\dimen112
+\sf@capskip=\skip49
+\sf@nearskip=\skip50
+\c@subfigure=\count91
+\c@subfigure@save=\count92
+\c@lofdepth=\count93
+\c@subtable=\count94
+\c@subtable@save=\count95
+\c@lotdepth=\count96
+\sf@top=\skip51
+\sf@bottom=\skip52
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -321,8 +355,8 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/12/03 3.9h Babel common definitions
-\babel@savecnt=\count89
-\U@D=\dimen105
+\babel@savecnt=\count97
+\U@D=\dimen113
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -330,7 +364,7 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip48
+\@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -339,49 +373,49 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
-\ex@=\dimen106
+\ex@=\dimen114
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen107
+\pmbraise@=\dimen115
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count90
+\inf@bad=\count98
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count91
-\leftroot@=\count92
+\uproot@=\count99
+\leftroot@=\count100
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count93
-\DOTSCASE@=\count94
+\classnum@=\count101
+\DOTSCASE@=\count102
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
-\big@size=\dimen108
+\big@size=\dimen116
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count95
-\c@MaxMatrixCols=\count96
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
 \dotsspace@=\muskip10
-\c@parentequation=\count97
-\dspbrk@lvl=\count98
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
 \tag@help=\toks16
-\row@=\count99
-\column@=\count100
-\maxfields@=\count101
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
 \andhelp@=\toks17
-\eqnshift@=\dimen109
-\alignsep@=\dimen110
-\tagshift@=\dimen111
-\tagwidth@=\dimen112
-\totwidth@=\dimen113
-\lineht@=\dimen114
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
 \@envbody=\toks18
-\multlinegap=\skip49
-\multlinetaggap=\skip50
+\multlinegap=\skip54
+\multlinetaggap=\skip55
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -401,9 +435,9 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headfont=\toks22
 \thm@notefont=\toks23
 \thm@headpunct=\toks24
-\thm@preskip=\skip51
-\thm@postskip=\skip52
-\thm@headsep=\skip53
+\thm@preskip=\skip56
+\thm@postskip=\skip57
+\thm@headsep=\skip58
 \dth@everypar=\toks25
 )
 (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
@@ -424,23 +458,23 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count102
+\lst@mode=\count110
 \lst@gtempboxa=\box29
 \lst@token=\toks26
-\lst@length=\count103
-\lst@currlwidth=\dimen115
-\lst@column=\count104
-\lst@pos=\count105
-\lst@lostspace=\dimen116
-\lst@width=\dimen117
-\lst@newlines=\count106
-\lst@lineno=\count107
-\lst@maxwidth=\dimen118
+\lst@length=\count111
+\lst@currlwidth=\dimen123
+\lst@column=\count112
+\lst@pos=\count113
+\lst@lostspace=\dimen124
+\lst@width=\dimen125
+\lst@newlines=\count114
+\lst@lineno=\count115
+\lst@maxwidth=\dimen126
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-\c@lstnumber=\count108
-\lst@skipnumbers=\count109
+\c@lstnumber=\count116
+\lst@skipnumbers=\count117
 \lst@framebox=\box30
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -462,82 +496,82 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrpage2' or `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 39.
+(scrartcl)              package `fancyhdr' on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip54
-\f@ncyO@elh=\skip55
-\f@ncyO@erh=\skip56
-\f@ncyO@olh=\skip57
-\f@ncyO@orh=\skip58
-\f@ncyO@elf=\skip59
-\f@ncyO@erf=\skip60
-\f@ncyO@olf=\skip61
-\f@ncyO@orf=\skip62
+\fancy@headwidth=\skip59
+\f@ncyO@elh=\skip60
+\f@ncyO@erh=\skip61
+\f@ncyO@olh=\skip62
+\f@ncyO@orh=\skip63
+\f@ncyO@elf=\skip64
+\f@ncyO@erf=\skip65
+\f@ncyO@olf=\skip66
+\f@ncyO@orf=\skip67
 )
 (./documentation.aux)
 \openout1 = `documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 72.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 73.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 73.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 73.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 73.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen119
+\scratchcounter=\count118
+\scratchdimen=\dimen127
 \scratchbox=\box31
-\nofMPsegments=\count111
-\nofMParguments=\count112
+\nofMPsegments=\count119
+\nofMParguments=\count120
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen120
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen128
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -587,76 +621,125 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count116
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 75.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count124
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 75
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 76
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 75.
+(Font)              scaled to size 13.24796pt on input line 76.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 75.
+(Font)              scaled to size 9.19998pt on input line 76.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 75.
+(Font)              scaled to size 7.35999pt on input line 76.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 75.
+(Font)              scaled to size 13.24796pt on input line 76.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 75.
+(Font)              scaled to size 9.19998pt on input line 76.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 75.
-LaTeX Font Info:    Try loading font information for U+msa on input line 75.
+(Font)              scaled to size 7.35999pt on input line 76.
+LaTeX Font Info:    Try loading font information for U+msa on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 75.
+LaTeX Font Info:    Try loading font information for U+msb on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./ontology_details.tex
-Overfull \hbox (0.62834pt too wide) in paragraph at lines 3--9
-\T1/futs/m/n/10.95 Each \T1/futs/m/it/10.95 Trans-portEn-tity \T1/futs/m/n/10.9
-5 fur-ther-more has a \T1/futs/m/it/10.95 Ca-ble-Type \T1/futs/m/n/10.95 in-di-
-cat-ing the lay-out of a power line. There
+(./ontology_details.tex <img/classes.png, id=1, 208.78pt x 230.8625pt>
+File: img/classes.png Graphic file (type png)
+
+<use img/classes.png>
+Package pdftex.def Info: img/classes.png used on input line 9.
+(pdftex.def)             Requested size: 138.02509pt x 152.63391pt.
+
+<img/objectProperties.png, id=2, 227.85126pt x 138.5175pt>
+File: img/objectProperties.png Graphic file (type png)
+
+<use img/objectProperties.png>
+Package pdftex.def Info: img/objectProperties.png used on input line 10.
+(pdftex.def)             Requested size: 138.02509pt x 83.91006pt.
+
+<img/dataProperties.png, id=3, 196.735pt x 96.36pt>
+File: img/dataProperties.png Graphic file (type png)
+
+<use img/dataProperties.png>
+Package pdftex.def Info: img/dataProperties.png used on input line 11.
+(pdftex.def)             Requested size: 138.02509pt x 67.60297pt.
+ [1
+
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/classes.png (PNG cop
+y)> <./img/objectProperties.png (PNG copy)> <./img/dataProperties.png (PNG copy
+)>]
+Overfull \hbox (7.73138pt too wide) in paragraph at lines 41--45
+\T1/futs/m/it/10.95 20kV50HzAC\T1/futs/m/n/10.95 . The \T1/futs/m/it/10.95 High
+-ToMedi-um-Trans-former \T1/futs/m/n/10.95 dis-tributes en-ergy to an \T1/futs/
+m/it/10.95 In-dus-tri-alPlant\T1/futs/m/n/10.95 , a \T1/futs/m/it/10.95 Hous-
  []
 
-<img/classes.png, id=1, 241.90375pt x 243.91125pt>
-File: img/classes.png Graphic file (type png)
- <use img/classes.png>
-Package pdftex.def Info: img/classes.png used on input line 12.
-(pdftex.def)             Requested size: 181.42735pt x 182.93298pt.
+[2] <img/entities.png, id=14, 224.84pt x 400.49625pt>
+File: img/entities.png Graphic file (type png)
+ <use img/entities.png>
+Package pdftex.def Info: img/entities.png used on input line 48.
+(pdftex.def)             Requested size: 125.47794pt x 223.50636pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+<img/swrlRules.png, id=15, 1303.87125pt x 102.3825pt>
+File: img/swrlRules.png Graphic file (type png)
+ <use img/swrlRules.png>
+Package pdftex.def Info: img/swrlRules.png used on input line 61.
+(pdftex.def)             Requested size: 418.25555pt x 32.84273pt.
+
+[3 <./img/entities.png (PNG copy)> <./img/swrlRules.png (PNG copy)>]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 68.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 68.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 68.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 68.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 68.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 68.
 )
 No file documentation.bbl.
-[1
-
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./img/classes.png (PNG
- copy)>] (./documentation.aux) ) 
+[4] (./documentation.aux) ) 
 Here is how much of TeX's memory you used:
- 6871 strings out of 493304
- 98105 string characters out of 6139872
- 206507 words of memory out of 5000000
- 10185 multiletter control sequences out of 15000+600000
- 59525 words of font info for 62 fonts, out of 8000000 for 9000
+ 8097 strings out of 493304
+ 120213 string characters out of 6139872
+ 232328 words of memory out of 5000000
+ 11385 multiletter control sequences out of 15000+600000
+ 96409 words of font info for 98 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 47i,11n,47p,431b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
-base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on documentation.pdf (2 pages, 41056 bytes).
+ 50i,11n,54p,929b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on documentation.pdf (4 pages, 77170 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
