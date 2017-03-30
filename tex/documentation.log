@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.17)  30 MAR 2017 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.17)  31 MAR 2017 01:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -520,17 +520,6 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 \f@ncyO@olf=\skip73
 \f@ncyO@orf=\skip74
 )
-Runaway argument?
-{Felipe Oehrwald, Cl \date {\normalsize \today } 
-! Paragraph ended before \author was complete.
-<to be read again> 
-                   \par 
-l.71 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 (./documentation.aux)
 \openout1 = `documentation.aux'.
 
@@ -680,9 +669,6 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: No \author given.
-
 (./Introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
@@ -805,7 +791,7 @@ No file documentation.bbl.
 Here is how much of TeX's memory you used:
  8762 strings out of 493014
  136660 string characters out of 6133351
- 290270 words of memory out of 5000000
+ 290295 words of memory out of 5000000
  12120 multiletter control sequences out of 15000+600000
  96409 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -813,7 +799,7 @@ Here is how much of TeX's memory you used:
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base
 /8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on documentation.pdf (8 pages, 353609 bytes).
+Output written on documentation.pdf (8 pages, 353655 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
